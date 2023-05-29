@@ -1,0 +1,19 @@
+what is recursion?
+when a function calls itself.
+when a functions solves the smaller problem to solve a bigger problem
+
+steps to develop recursive thinking :
+DON'T THINK RECURSIVE
+step 1: Write a iterative function to solve the problem
+    -- ultimately not necessary but good for learning technique
+    -- helps us get details right
+    -- important that parameter list is correct
+
+step 2: Write a "dispatcher" function
+    dispatcher function will solve the problem for the minimal data set
+    dispatcher call iterative function to handle not minimal data set
+    dispatcher must handle the last case and call the iterative function for rest
+
+step 3: replace iterative function call with the dispatcher and delete iterative function.
+
+APPLYING THIS TECHNIQUE: start with problem you can solve iteratively.
