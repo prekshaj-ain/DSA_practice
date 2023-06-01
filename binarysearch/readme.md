@@ -1,6 +1,6 @@
 # What is binary search?
 
-- Used for searching in sorted array.
+- Binary search works by repeatedly dividing the array into two halves that can contain the given target element, till the search area is limited to just one element. The necessary condition for binary search to work is the array needs to be sorted
 - Total comparison in the worst case: logN
 
 - find middle element
@@ -12,3 +12,5 @@
 
 - Implementation of binary search
 - Implementation of order-Agnostic binary search
+- Ceiling of a number
+- floor of a number
