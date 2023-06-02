@@ -14,3 +14,5 @@
 - Implementation of order-Agnostic binary search
 - Ceiling of a number
 - floor of a number
+- Find first and last position of element in sorted array
+- Position of element in infinite sorted array
