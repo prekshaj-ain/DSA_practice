@@ -18,6 +18,8 @@
 - Position of element in infinite sorted array
 - Peak element in mountain array
 - Search the element in bitonic array
+- Number of times a sorted array is rotated
+- find an element in rotated sorted arrays
 
 # Concept
 
