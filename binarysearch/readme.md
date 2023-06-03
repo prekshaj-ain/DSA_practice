@@ -16,3 +16,9 @@
 - floor of a number
 - Find first and last position of element in sorted array
 - Position of element in infinite sorted array
+- Peak element in mountain array
+- Search the element in bitonic array
+
+# Concept
+
+- Binary search on answers
