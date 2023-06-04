@@ -20,6 +20,8 @@
 - Search the element in bitonic array
 - Number of times a sorted array is rotated
 - find an element in rotated sorted arrays
+- split array largest sum
+- search in matrix which is column wise and row wise sorted
 
 # Concept
 
