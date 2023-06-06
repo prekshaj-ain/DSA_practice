@@ -19,6 +19,19 @@ We perform the steps given below until the unsorted subarray becomes empty:
   Space complexity: O(1)
 
 ## Insertion sort
+
 Insertion sort is the sorting mechanism where the sorted array is built having one item at a time. The array elements are compared with each other sequentially and then arranged simultaneously in some particular order. The analogy can be understood from the style we arrange a deck of cards. This sort works on the principle of inserting an element at a particular position, hence the name Insertion Sort.
 Time complexity: O(n^2)
 Space complexity: O(1)
+
+## Pattern
+
+- When given numbers are from 1 to N. => use cyclic sort
+
+## questions `leetcode`
+
+- Find the only missing number
+- Find all the numbers disappeared from the array
+- find the duplicate numbers
+- find all the duplicates from array
+- find mismatch
