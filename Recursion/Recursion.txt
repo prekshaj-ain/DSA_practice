@@ -13,3 +13,5 @@ Questions
 - Bubble sort recursion
 - Permutation of a string (duplicates)
 - Permutataion in lexical order
+- Find Combination of size k using integer 1 to N
+- Combination sum leetcode - 39
