@@ -1,5 +1,6 @@
 // preorder
 // postorder
+// delete tree
 
 #include "Tree.h"
 #include <iostream>
@@ -31,6 +32,16 @@ TreeNode<int> *takeInputLevelOrder()
         }
     }
     return root;
+}
+
+void deleteTree(TreeNode<int> *root)
+{
+    for (int i = 0; i < root->children.size(); i++)
+    {
+        deleteTree(root->children[i]);
+    }
+    delete root;
+    return;
 }
 
 void Preorder(TreeNode<int> *root)
