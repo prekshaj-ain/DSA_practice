@@ -1,11 +1,11 @@
-// find height of tree
-// depth of node
-// count leaf nodes
+// preorder
+// postorder
 
 #include "Tree.h"
 #include <iostream>
 #include <queue>
 using namespace std;
+
 TreeNode<int> *takeInputLevelOrder()
 {
     int rootData;
@@ -33,52 +33,34 @@ TreeNode<int> *takeInputLevelOrder()
     return root;
 }
 
-int height(TreeNode<int> *root)
+void Preorder(TreeNode<int> *root)
 {
-    int ans = 0;
-    for (int i = 0; i < root->children.size(); i++)
-    {
-        int subAns = height(root->children[i]);
-        if (subAns > ans)
-            ans = subAns;
-    }
-    return ans + 1;
-}
-
-void printAtDepthD(int d, TreeNode<int> *root)
-{
-    if (d == 0)
-    {
-        cout << root->data << " ";
+    if (root == NULL)
         return;
-    }
+    cout << root->data << " ";
     for (int i = 0; i < root->children.size(); i++)
     {
-        printAtDepthD(d - 1, root->children[i]);
+        Preorder(root->children[i]);
     }
 }
 
-int countLeafNodes(TreeNode<int> *root)
+void Postorder(TreeNode<int> *root)
 {
-    if (root->children.size() == 0)
-    {
-        return 1;
-    }
-    int count = 0;
+    if (root == NULL)
+        return;
     for (int i = 0; i < root->children.size(); i++)
     {
-        count += countLeafNodes(root->children[i]);
+        Postorder(root->children[i]);
     }
-    return count;
+    cout << root->data << " ";
 }
 
 int main()
 {
     TreeNode<int> *root = takeInputLevelOrder();
-    cout << "Height : " << height(root) << endl;
-    cout << "Depth 2 : ";
-    printAtDepthD(2, root);
+    cout << "Preorder : " << endl;
+    Preorder(root);
     cout << endl;
-    cout << "Leaf node count : " << countLeafNodes(root);
-    return 0;
+    cout << "Postorder : " << endl;
+    Postorder(root);
 }
