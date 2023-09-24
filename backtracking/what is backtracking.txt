@@ -1,0 +1,8 @@
+recursion and backtracking is quite similar. 
+In recursion we follow every possible path. And one of the path has solution.then we will tale solution from that path.
+whereas in backtracking, We move to a path and check if this path will eventually lead to our solution or not.
+If not we will backtrack else we will continue and check at every step.
+
+Recursion will travel in every path.It is a brute force approch.
+recursion will not check.Recursion is dumb.
+backtracking is used for optimizing the solution.

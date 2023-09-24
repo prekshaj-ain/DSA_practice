@@ -1,0 +1,8 @@
+stack is a data structure used to store the data in lifo manner.
+stack is lifo : last in first out.
+it contains a top which points to topmost element.
+
+Applications of stack
+It can easily reverse a seqence.
+
+
